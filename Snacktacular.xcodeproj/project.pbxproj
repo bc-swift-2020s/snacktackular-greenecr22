@@ -13,6 +13,13 @@
 		EA1105582443F87D00D0292F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1105562443F87D00D0292F /* Main.storyboard */; };
 		EA11055A2443F88300D0292F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA1105592443F88300D0292F /* Assets.xcassets */; };
 		EA11055D2443F88300D0292F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA11055B2443F88300D0292F /* LaunchScreen.storyboard */; };
+		EA1105652443F8BD00D0292F /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1105642443F8BD00D0292F /* Spots.swift */; };
+		EA1105672443F8D500D0292F /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1105662443F8D500D0292F /* Spot.swift */; };
+		EA1105692443F8F400D0292F /* SpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1105682443F8F400D0292F /* SpotListViewController.swift */; };
+		EA11056B2443F93600D0292F /* SpotsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11056A2443F93600D0292F /* SpotsTableViewCell.swift */; };
+		EA11056D2443F95300D0292F /* SpotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11056C2443F95300D0292F /* SpotDetailViewController.swift */; };
+		EA11056F2443F98F00D0292F /* SpotReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11056E2443F98F00D0292F /* SpotReviewsTableViewCell.swift */; };
+		EA1105712443F9D300D0292F /* SpotPhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1105702443F9D300D0292F /* SpotPhotosCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		EA1105592443F88300D0292F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA11055C2443F88300D0292F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA11055E2443F88300D0292F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA1105642443F8BD00D0292F /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
+		EA1105662443F8D500D0292F /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
+		EA1105682443F8F400D0292F /* SpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotListViewController.swift; sourceTree = "<group>"; };
+		EA11056A2443F93600D0292F /* SpotsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsTableViewCell.swift; sourceTree = "<group>"; };
+		EA11056C2443F95300D0292F /* SpotDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewController.swift; sourceTree = "<group>"; };
+		EA11056E2443F98F00D0292F /* SpotReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotReviewsTableViewCell.swift; sourceTree = "<group>"; };
+		EA1105702443F9D300D0292F /* SpotPhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotPhotosCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +71,13 @@
 			isa = PBXGroup;
 			children = (
 				EA1105502443F87D00D0292F /* AppDelegate.swift */,
+				EA1105642443F8BD00D0292F /* Spots.swift */,
+				EA1105662443F8D500D0292F /* Spot.swift */,
+				EA1105682443F8F400D0292F /* SpotListViewController.swift */,
+				EA11056A2443F93600D0292F /* SpotsTableViewCell.swift */,
+				EA11056C2443F95300D0292F /* SpotDetailViewController.swift */,
+				EA11056E2443F98F00D0292F /* SpotReviewsTableViewCell.swift */,
+				EA1105702443F9D300D0292F /* SpotPhotosCollectionViewCell.swift */,
 				EA1105522443F87D00D0292F /* SceneDelegate.swift */,
 				EA1105542443F87D00D0292F /* ViewController.swift */,
 				EA1105562443F87D00D0292F /* Main.storyboard */,
@@ -139,8 +160,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA1105552443F87D00D0292F /* ViewController.swift in Sources */,
+				EA11056D2443F95300D0292F /* SpotDetailViewController.swift in Sources */,
 				EA1105512443F87D00D0292F /* AppDelegate.swift in Sources */,
+				EA1105712443F9D300D0292F /* SpotPhotosCollectionViewCell.swift in Sources */,
+				EA11056B2443F93600D0292F /* SpotsTableViewCell.swift in Sources */,
+				EA1105692443F8F400D0292F /* SpotListViewController.swift in Sources */,
+				EA1105672443F8D500D0292F /* Spot.swift in Sources */,
 				EA1105532443F87D00D0292F /* SceneDelegate.swift in Sources */,
+				EA11056F2443F98F00D0292F /* SpotReviewsTableViewCell.swift in Sources */,
+				EA1105652443F8BD00D0292F /* Spots.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
