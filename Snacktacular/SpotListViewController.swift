@@ -20,6 +20,7 @@ class SpotsListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     var spots: Spots!
+    @IBOutlet weak var sortSegmentedControl: UISegmentedControl!
     var authUI: FUIAuth!
     
     override func viewDidLoad() {
@@ -37,6 +38,7 @@ class SpotsListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         spots.loadData {
+            self.sortBasedOnSegmentPressed()
             self.tableView.reloadData()
         }
     }
@@ -71,6 +73,23 @@ class SpotsListViewController: UIViewController {
                 tableView.deselectRow(at: selectedIndexPath, animated: true)
             }
         }
+    }
+    
+    func sortBasedOnSegmentPressed() {
+        switch sortSegmentedControl.selectedSegmentIndex {
+        case 0: // a-z
+            spots.spotArray.sort(by: {$0.name > $1.name})
+        case 1: //closest
+            print("todo")
+        case 2: //avg
+            print("todo")
+        default:
+            print("You shouldn't be seeing this!")
+        }
+    }
+    
+    @IBAction func sortSegmentPressed(_ sender: UISegmentedControl) {
+        sortBasedOnSegmentPressed()
     }
     
     @IBAction func signOutPressed(_ sender: UIBarButtonItem) {
