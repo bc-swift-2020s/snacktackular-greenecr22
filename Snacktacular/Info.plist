@@ -79,5 +79,9 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSCameraUsageDescription</key>
+	<string>Snacktacular needs camera access for restaurant photos.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Snacktacular needs photo access for restaurant photos.</string>
 </dict>
 </plist>
