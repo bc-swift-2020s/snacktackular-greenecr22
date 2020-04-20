@@ -11,6 +11,7 @@
 		EA0606302443FF7A00EE63F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA06062F2443FF7A00EE63F5 /* GoogleService-Info.plist */; };
 		EA060636244DEA1B00EE63F5 /* Double+roundTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA060635244DEA1B00EE63F5 /* Double+roundTo.swift */; };
 		EA060638244DF22100EE63F5 /* UIView+addBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA060637244DF22100EE63F5 /* UIView+addBorder.swift */; };
+		EA06063A244E021700EE63F5 /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA060639244E021700EE63F5 /* ReviewTableViewController.swift */; };
 		EA1105512443F87D00D0292F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1105502443F87D00D0292F /* AppDelegate.swift */; };
 		EA1105532443F87D00D0292F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1105522443F87D00D0292F /* SceneDelegate.swift */; };
 		EA1105552443F87D00D0292F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1105542443F87D00D0292F /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 		EA06062F2443FF7A00EE63F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		EA060635244DEA1B00EE63F5 /* Double+roundTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+roundTo.swift"; sourceTree = "<group>"; };
 		EA060637244DF22100EE63F5 /* UIView+addBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addBorder.swift"; sourceTree = "<group>"; };
+		EA060639244E021700EE63F5 /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
 		EA11054D2443F87D00D0292F /* Snacktacular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snacktacular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1105502443F87D00D0292F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA1105522443F87D00D0292F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				EA11056C2443F95300D0292F /* SpotDetailViewController.swift */,
 				EA11056E2443F98F00D0292F /* SpotReviewsTableViewCell.swift */,
 				EA1105702443F9D300D0292F /* SpotPhotosCollectionViewCell.swift */,
+				EA060639244E021700EE63F5 /* ReviewTableViewController.swift */,
 				EA060635244DEA1B00EE63F5 /* Double+roundTo.swift */,
 				EA060637244DF22100EE63F5 /* UIView+addBorder.swift */,
 				EA1105522443F87D00D0292F /* SceneDelegate.swift */,
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA1105552443F87D00D0292F /* ViewController.swift in Sources */,
+				EA06063A244E021700EE63F5 /* ReviewTableViewController.swift in Sources */,
 				EA11056D2443F95300D0292F /* SpotDetailViewController.swift in Sources */,
 				EA1105512443F87D00D0292F /* AppDelegate.swift in Sources */,
 				EA1105712443F9D300D0292F /* SpotPhotosCollectionViewCell.swift in Sources */,
