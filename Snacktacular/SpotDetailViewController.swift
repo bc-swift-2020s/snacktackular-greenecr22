@@ -24,6 +24,7 @@ class SpotDetailViewController: UIViewController {
     
     var spot: Spot!
     var reviews: Reviews!
+    var photos: Photos!
     let regionDistance: CLLocationDistance = 750 // 750 meters, about 1/2 mile
     var locationManager: CLLocationManager!
     var currentLocation: CLLocation!
@@ -36,12 +37,15 @@ class SpotDetailViewController: UIViewController {
         self.view.addGestureRecognizer(tap)
         
         reviews = Reviews()
+        photos = Photos()
         
         
     //    mapView.delegate = self
         
         tableView.delegate = self
         tableView.dataSource = self
+        collectionView.delegate = self
+        collectionView.datasource = self
         
         if spot == nil {
             spot = Spot()
@@ -136,8 +140,22 @@ class SpotDetailViewController: UIViewController {
             print("No segue in view controller.")
         }
     }
+    
+    func cameraOrLibraryAlert() {
+        let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        let cameraAction = UIAlertAction(title: "Camera", style: .default, handler: nil)
+        let photoLibraryAction = UIAlertAction(title: "Photo Library", style: .default, handler: nil)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alertController.addAction(cameraAction)
+        alertController.addAction(photoLibraryAction)
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
 
     @IBAction func photoButtonPressed(_ sender: UIButton) {
+        cameraOrLibraryAlert()
     }
     
     @IBAction func reviewButtonPressed(_ sender: UIButton) {
@@ -280,6 +298,17 @@ extension SpotDetailViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewCell", for: indexPath) as! SpotReviewsTableViewCell
         cell.review = reviews.reviewArray[indexPath.row]
+        return cell
+    }
+}
+
+extension SpotDetailViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return photos.photoArray.count
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCell", for: indexPath) as! SpotPhotosCollectionViewCell
+        cell.photo = photos.photoArray[indexPath.row]
         return cell
     }
 }
