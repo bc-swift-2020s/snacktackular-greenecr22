@@ -462,26 +462,41 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="42.333333333333336" height="40"/>
                                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <state key="normal" image="star-empty"/>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="Z2Y-eZ-7Us" eventType="touchUpInside" id="QYR-af-MIA"/>
+                                                            </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOx-RD-I4S">
+                                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOx-RD-I4S">
                                                             <rect key="frame" x="43.333333333333329" y="0.0" width="42.333333333333329" height="40"/>
                                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <state key="normal" image="star-empty"/>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="Z2Y-eZ-7Us" eventType="touchUpInside" id="Zlk-nt-nBT"/>
+                                                            </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yov-ll-N8I">
+                                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yov-ll-N8I">
                                                             <rect key="frame" x="86.666666666666671" y="0.0" width="42.333333333333329" height="40"/>
                                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <state key="normal" image="star-empty"/>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="Z2Y-eZ-7Us" eventType="touchUpInside" id="xLa-fG-SaE"/>
+                                                            </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezN-7x-UNe">
+                                                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezN-7x-UNe">
                                                             <rect key="frame" x="130" y="0.0" width="42.333333333333343" height="40"/>
                                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <state key="normal" image="star-empty"/>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="Z2Y-eZ-7Us" eventType="touchUpInside" id="4bo-Cd-OrC"/>
+                                                            </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIa-cJ-Cm7">
+                                                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIa-cJ-Cm7">
                                                             <rect key="frame" x="173.33333333333331" y="0.0" width="42.666666666666657" height="40"/>
                                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <state key="normal" image="star-empty"/>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="Z2Y-eZ-7Us" eventType="touchUpInside" id="KXU-5v-oPc"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
@@ -651,6 +666,11 @@
                         <outlet property="reviewTitle" destination="GSs-De-nSk" id="1PP-e9-W4J"/>
                         <outlet property="reviewView" destination="BQq-GE-pA6" id="o9p-Xg-veM"/>
                         <outlet property="saveBarButton" destination="xaX-Re-wPn" id="Ct2-eE-phh"/>
+                        <outletCollection property="starButtonCollection" destination="2ip-7Y-j68" collectionClass="NSMutableArray" id="6lR-ll-IK2"/>
+                        <outletCollection property="starButtonCollection" destination="fOx-RD-I4S" collectionClass="NSMutableArray" id="F15-nF-oR9"/>
+                        <outletCollection property="starButtonCollection" destination="Yov-ll-N8I" collectionClass="NSMutableArray" id="YlB-2T-VRJ"/>
+                        <outletCollection property="starButtonCollection" destination="ezN-7x-UNe" collectionClass="NSMutableArray" id="leM-0g-kSO"/>
+                        <outletCollection property="starButtonCollection" destination="PIa-cJ-Cm7" collectionClass="NSMutableArray" id="tP5-Wm-O4h"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqC-Mw-nkg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
